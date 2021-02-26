@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="realtime_filter.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <div class="realtime_filter">
+      <div class="form">
+        <h3>食いしん坊リアルタイムフィルター</h3>
+        <p>入力された文字列を含まない要素は非表示になります。</p>
+        <form>
+          <input id="input_text" type="text">
+        </form>
+      </div>
+      <div class="image_list">
+        <div class="content meat">
+          <div class="image_box">
+            <img src="https://www.momofukugyu.jp/choice/yakiniku/img/kv_img01.jpg">
+          </div>
+          <p>キーワード</p>
+          <div class="keyword_list">
+            <p class="keyword_meat1">肉</p>
+            <p class="keyword_meat2">にく</p>
+            <p class="keyword_meat3">niku</p>
+            <p class="keyword_meat4 hidden_text">にk</p><!--変換途中の文字でフィルターがかからないようにするためのタグ-->
+          </div>
+        </div>
+        <div class="content fish">
+          <div class="image_box">
+            <img src="https://shun-gate.com/img/power_style_70/pic_1.jpg">
+          </div>
+          <p>キーワード</p>
+          <div class="keyword_list">
+            <p class="keyword_fish1">魚</p>
+            <p class="keyword_fish2">さかな</p>
+            <p class="keyword_fish3">sakana</p>
+            <p class="keyword_fish4 hidden_text">さk</p>
+            <p class="keyword_fish5 hidden_text">さかn</p>
+          </div>
+        </div>
+        <div class="content vegetable">
+          <div class="image_box">
+            <img src="https://dancyu.jp/images/3440a.jpg">
+          </div>
+          <p>キーワード</p>
+          <div class="keyword_list">
+            <p class="keyword_vegetable1">野菜</p>
+            <p class="keyword_vegetable2">やさい</p>
+            <p class="keyword_vegetable3">yasai</p>
+            <p class="keyword_vegetable4 hidden_text">やs</p>
+          </div>
+        </div>
+        <div class="content yakiniku">
+          <div class="image_box">
+            <img src="https://imgfp.hotp.jp/IMGH/28/01/P036162801/P036162801_480.jpg">
+          </div>
+          <p>キーワード</p>
+          <div class="keyword_list">
+            <p class="keyword_yakiniku1">焼き肉</p>
+            <p class="keyword_yakiniku2">やきにく</p>
+            <p class="keyword_yakiniku3">yakiniku</p>
+            <p class="keyword_yakiniku4 hidden_text">やk</p>
+            <p class="keyword_yakiniku5 hidden_text">やきn</p>
+            <p class="keyword_yakiniku6 hidden_text">やきにk</p>
+          </div>
+        </div>
+        <div class="content sasimi">
+          <div class="image_box">
+            <img src="https://all-guide.com/wp-content/uploads/707011611.jpg">
+          </div>
+          <p>キーワード</p>
+          <div class="keyword_list">
+            <p class="keyword_sasimi1">刺し身</p>
+            <p class="keyword_sasimi2">さしみ</p>
+            <p class="keyword_sasimi3">sasimi</p>
+            <p class="keyword_sasimi4 hidden_text">さs</p>
+            <p class="keyword_sasimi5 hidden_text">さしm</p>
+          </div>
+        </div>
+        <div class="content yasaiitame">
+          <div class="image_box">
+            <img src="https://www.lettuceclub.net/i/R1/img/dish/1/S20150225024001A_000.png?w=450&opt=jpg">
+          </div>
+          <p>キーワード</p>
+          <div class="keyword_list">
+            <p class="keyword_yasaiitame1">野菜炒め</p>
+            <p class="keyword_yasaiitame2">やさいいため</p>
+            <p class="keyword_yasaiitame3">yasaiitame</p>
+            <p class="keyword_yasaiitame4 hidden_text">やs</p>
+            <p class="keyword_yasaiitame5 hidden_text">やさいいt</p>
+            <p class="keyword_yasaiitame6 hidden_text">やさいいたm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="realtime_filter.js"></script>
+  </body>
+</html>
